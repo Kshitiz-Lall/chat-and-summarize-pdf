@@ -54,7 +54,15 @@ const PDFDownloader = ({ messages }) => {
     doc.save("Chat-Conversation.pdf");
   };
 
-  return <button onClick={downloadPDF}>DOWNLOAD PDF</button>;
+  return (
+    <div className="pdf-div">
+      If u want to download your conversation then click on DOWNLOAD PDF
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onClick={downloadPDF} className="submit-button">
+        DOWNLOAD PDF
+      </button>
+    </div>
+  );
 };
 
 export default PDFDownloader;
