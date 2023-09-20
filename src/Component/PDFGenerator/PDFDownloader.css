@@ -1,0 +1,128 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.ccda-viewer {
+  margin: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-paper {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.ccda-viewer .MuiTableCell-head {
+  background-color: #dbdbdb;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+  text-transform: capitalize;
+}
+
+.ccda-viewer .MuiTypography-root {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tablerow .MuiTableCell-root {
+  padding: 12px;
+  color: #272983;
+  border-bottom: 1px solid #ddd;
+  text-transform: capitalize;
+}
+
+.ccda-viewer .MuiTableCell-root:not(:last-child) {
+  border-right: 1px solid #ddd !important;
+}
+
+.table-body {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tables {
+  margin: 30px;
+  width: 100%;
+}
+
+.tables .MuiTable-root {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.tables .MuiTableRow-root {
+  border-bottom: 1px solid #ddd;
+}
+
+.tables .MuiTableCell-root {
+  padding: 12px;
+  text-align: left;
+}
+
+.tables .MuiTableHead-root {
+  background-color: #dbdbdb;
+}
+
+.tables .MuiTableHead-root .MuiTableCell-head {
+  font-weight: bold;
+}
+
+.tables .MuiTableBody-root {
+  background-color: #fff;
+}
+
+.button-container {
+  margin-bottom: 10px;
+  display: flex; /* Create a flex container */
+  gap: 10px; /* Add some space between buttons */
+  justify-content: flex-start; /* Align content to the right */
+  padding-left: 25px;
+}
+
+.button-container button {
+  background-color: #0055aa;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #0055aa;
+}
+
+.button-container button:active {
+  background-color: #0055aa;
+}
+
+.ccda-document-info {
+  line-height: 1.5;
+  margin-left: 15px;
+}

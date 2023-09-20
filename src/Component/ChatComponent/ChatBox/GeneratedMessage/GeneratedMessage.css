@@ -1,0 +1,139 @@
+/* Styles for the overall chat container */
+.gen_messages {
+  width: 70%;
+  max-width: 914px;
+  overflow-y: auto;
+}
+
+.gen_messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for the message container */
+.messageContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+
+/* Styles for the chat image */
+.genchatimg {
+  height: 24.67px;
+  border-radius: 80%;
+  object-fit: cover;
+  margin-bottom: auto;
+}
+
+/* Styles for the message box and content */
+.messageBox {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  border: 1px solid #1073ba;
+  border-radius: 10px;
+  background-color: #edf2fb;
+  position: relative;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  gap: 20px;
+}
+
+.gen_message-p {
+  margin-top: 23px;
+  min-width: 30vh;
+  color: #1e1e1e;
+  padding-left: 2vh;
+  padding-right: 3vh;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.messageContainer.dark-mode .messageBox {
+  background-color: #333333;
+  border: none;
+  color: white;
+}
+
+/* Styles for the answer header */
+.answerHeader {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.answerLogo {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.answerText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #142952;
+}
+
+.messageContainer.dark-mode .answerText {
+  color: #e6e6e6;
+}
+
+.messageContainer.dark-mode .gen_message-p {
+  color: #b9b9b9;
+}
+
+/* Styles for message actions like timestamps, likes, and dislikes */
+.messageActions {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.likeButton,
+.dislikeButton {
+  background: none;
+  border: none;
+  cursor: pointer !important;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  justify-content: flex-start;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #b9b9b9;
+}
+
+.messageContainer.dark-mode .timestamp {
+  color: #787878;
+}
+
+.responsiveContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .gen_messages {
+    width: 100%;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,75 @@
+/* Common styles for user messages */
+
+.userMsgContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  left: 10px;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* User profile image */
+.userMsgIcon {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  height: 22.67px;
+  border-radius: 80%;
+  object-fit: cover;
+}
+
+/* Message content container */
+.userMsgBox {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 20px;
+  position: relative;
+  border-radius: 10px;
+  min-width: 80px;
+  width: auto;
+  justify-content: center;
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  font-size: small;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  border: 0.5px solid #787878;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.userMsgText {
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+/* Dark mode styles */
+.dark-mode .userMsgBox {
+  background-color: #1e1e1e;
+  border: 0.5px solid #787878;
+  color: #b9b9b9;
+}
+
+.dark-text {
+  color: #b9b9b9;
+}
+
+.userMsgTimestamp {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  color: #b9b9b9;
+}
+
+.dark-mode .userMsgTimestamp {
+  color: #787878;
+}

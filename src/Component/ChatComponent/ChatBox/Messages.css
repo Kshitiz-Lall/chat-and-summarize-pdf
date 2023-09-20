@@ -1,0 +1,11 @@
+.loading_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.message_loading {
+  width: 40px;
+  height: auto;
+}
