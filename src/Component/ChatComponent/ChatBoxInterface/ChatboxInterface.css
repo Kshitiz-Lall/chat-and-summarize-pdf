@@ -3,7 +3,8 @@
 }
 
 .chatbox-interface__container {
-  margin-top: 1vh;
+  margin-top: auto;
+  margin-bottom: 10px;
   background-color: #ffffff;
 }
 

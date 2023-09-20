@@ -6,6 +6,7 @@ import {
   FormControl,
   FormLabel,
 } from "@material-ui/core";
+import "./SectionList.css";
 
 const SectionsList = ({ onSectionSubmit }) => {
   const [selectedSection, setSelectedSection] = useState("");
@@ -37,7 +38,17 @@ const SectionsList = ({ onSectionSubmit }) => {
 
   return (
     <div className="sections-list">
-      <h2>Sections</h2>
+      <div className="header-section">
+        <h2>Sections</h2>
+        <button
+          onClick={handleSectionSubmit}
+          className="submit-button"
+          disabled={!selectedSection}
+        >
+          Submit
+        </button>
+      </div>
+
       <FormControl component="fieldset">
         <FormLabel component="legend">Choose a section</FormLabel>
         <RadioGroup
@@ -55,7 +66,6 @@ const SectionsList = ({ onSectionSubmit }) => {
             />
           ))}
         </RadioGroup>
-        <button onClick={handleSectionSubmit}>Submit</button>
       </FormControl>
     </div>
   );

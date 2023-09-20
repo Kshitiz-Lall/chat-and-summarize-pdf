@@ -3,9 +3,26 @@
   height: 100vh;
 }
 
-.App>* {
+.App > * {
   overflow-y: auto;
-  /* To allow scrolling within each section if content overflows */
+}
+.app-container {
+  display: grid;
+
+  grid-template-columns: 30% 70%;
+  margin-left: 5vh;
+  height: 100vh;
+}
+
+.sections-list {
+  /* Styles specific to the SectionsList component */
+  border-right: 1px solid #ddd; /* Optional: to visually separate the two sections */
+  overflow-y: auto; /* For scrolling if the content exceeds the viewport height */
+}
+
+.chatbox-interface {
+  /* Styles specific to the ChatboxInterface component */
+  overflow-y: auto; /* For scrolling if the content exceeds the viewport height */
 }
 
 /* Set the width of SectionsList to 25% */
