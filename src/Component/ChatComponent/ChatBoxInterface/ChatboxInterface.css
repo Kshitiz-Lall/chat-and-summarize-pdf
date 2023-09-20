@@ -3,13 +3,8 @@
 }
 
 .chatbox-interface__container {
-  margin-top: 8vh;
+  margin-top: 1vh;
   background-color: #ffffff;
-}
-
-.chatbox_dark-mode {
-  margin-top: 8vh;
-  background-color: #111111;
 }
 
 .chatbox-interface__chat-bar input {
@@ -22,27 +17,6 @@
   color: #1e1e1e;
 }
 
-.chatbox_dark-mode .chatbox-interface__chat-bar input {
-  color: #8b939d;
-  background-color: #292b2d;
-}
-
-.chatbox_dark-mode .chatbox-interface__initial-chat-bar input {
-  color: #8b939d;
-  background-color: #292b2d;
-}
-
-.chatbox_dark-mode .chatbox-interface__dark-mode-content {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.875rem;
-  color: #787878;
-  margin-top: 2px;
-  margin-bottom: -10px;
-}
-
 .chatbox-interface__description {
   font-size: 1rem;
   font-weight: 400;
@@ -51,41 +25,12 @@
   color: #1e1e1e;
 }
 
-.chatbox_dark-mode .chatbox-interface__description {
-  margin-top: -3px;
-  color: #e6e6e6;
-}
-
-.chatbox-interface__security-logo {
-  height: 24px;
-  width: 24px;
-}
-
 .chatbox-interface__messages-container {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
-.chatbox_dark-mode .chatbox-interface__messages-container {
-  background-color: #121212;
-}
-
 .chatbox-interface__messages-container.has-messages {
-  height: 60vh;
-  overflow-y: auto;
-  margin-top: -60px;
-  bottom: 20px;
-  position: relative;
-}
-
-@media (max-width: 600px) {
-  .chatbox-interface__messages-container.has-messages {
-    margin-top: -60px;
-
-  }
-
-  .chatbox-interface__description {
-    display: none;
-  }
+  height: 50vh;
 }
