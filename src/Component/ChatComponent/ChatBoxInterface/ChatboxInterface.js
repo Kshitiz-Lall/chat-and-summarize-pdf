@@ -4,6 +4,7 @@ import Messages from "../ChatBox/Messages";
 import "./ChatboxInterface.css";
 import Grid from "@material-ui/core/Grid";
 import axios from "axios";
+import PDFDownloader from "../../PDFGenerator/PDFDownloader";
 
 const ChatboxInterface = () => {
   const [messages, setMessages] = useState([]);
@@ -48,7 +49,7 @@ const ChatboxInterface = () => {
 
       <Grid item xs={12} className="chatbox-interface__chat-bar">
         <ChatBar onSendMessage={addMessageToConversation} />
-        {/* <PDFGenerator/> */}
+        <PDFDownloader messages={messages} />
       </Grid>
     </Grid>
   );

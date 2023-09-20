@@ -4,6 +4,7 @@
 
 .chatbox-interface__container {
   margin-top: 1vh;
+  size: 100%;
   background-color: #ffffff;
 }
 
