@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app-container">
       <SectionsList onSectionSubmit={handleSectionSubmit} />
       {showChatInterface && <ChatboxInterface />}
     </div>
